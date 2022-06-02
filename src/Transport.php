@@ -436,7 +436,7 @@ final class Transport implements ClientInterface, HttpAsyncClient
     {
         switch(get_class($this->client)) {
             case 'GuzzleHttp\Client':
-                $version = InstalledVersions::getPrettyVersion('guzzlehttp/guzzle');
+                $version = '7.4.3';
                 return ['gu', $version];
             default:
                 return [];
